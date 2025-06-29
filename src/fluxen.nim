@@ -1,5 +1,9 @@
-# This is just an example to get you started. A typical binary package
-# uses this file as the main entry point of the application.
+import std/cmdline,os
 
+# reading args
+var fileLocation: string = paramStr(1)
+
+# reading file
 when isMainModule:
-  echo("Hello, World!")
+   var str: string = readFile(fileLocation)
+   echo str
