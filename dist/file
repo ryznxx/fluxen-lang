@@ -1,0 +1,19 @@
+type
+  TokenType = enum
+    # Keywords
+    TOK_RAW, TOK_FIX, TOK_PRINT, TOK_IF, TOK_ELSE, TOK_FOR, TOK_WHILE, TOK_FUNC
+
+    # Symbols
+    TOK_ASSIGN      # =
+    TOK_COLON       # :
+    TOK_ARROW       # =>
+    TOK_DOTDOT      # ..
+    TOK_LPAREN      # (
+    TOK_RPAREN      # )
+    TOK_NEWLINE     # \n
+
+    # General
+    TOK_IDENTIFIER
+    TOK_STRING
+    TOK_NUMBER
+    TOK_EOF
